@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:signlanguage/core/constant/colors.dart';
 import 'binding/initialbinding.dart';
 import 'core/classes/crud.dart';
 import 'core/classes/route.dart';
 import 'core/services/services.dart';
-
 void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
   Get.put(Crud());
   await Get.putAsync(() => MyServices().init());
   runApp(const MyApp());
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
           getPages: Routers().routers,
           initialBinding: InitialBinding(),
           locale:const Locale('ar'),
+          theme: ThemeData(
+            scaffoldBackgroundColor: AppColors.darkbluecolor
+
+          ),
         );
       },
     );

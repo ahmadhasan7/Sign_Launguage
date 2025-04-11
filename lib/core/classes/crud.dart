@@ -2,9 +2,7 @@ import 'dart:convert';
 import 'package:dartz/dartz.dart';
 import 'package:http/http.dart' as http;
 import 'package:signlanguage/core/classes/stutusconntection.dart';
-
 import '../functions/checkinternet.dart';
-
 
 class Crud {
   Future<Either<StatusRequest, Map>> postData(String linkurl, Map data) async {
