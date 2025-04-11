@@ -1,6 +1,8 @@
 import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
 
+import '../core/constant/routing.dart';
+
 class SplashController extends GetxController with SingleGetTickerProviderMixin {
   late AnimationController animationController;
   late Animation<Offset> slidingAnimation;
@@ -31,7 +33,7 @@ class SplashController extends GetxController with SingleGetTickerProviderMixin 
 
   void goToHomeView() {
     Future.delayed(const Duration(seconds: 3), () {
-      // context.push(Routers.homeeView);
+      Get.toNamed(AppRoute.onbording);
     });
   }
 

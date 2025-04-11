@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:signlanguage/core/constant/colors.dart';
 import 'package:signlanguage/core/constant/image.dart';
 import '../../../controller/splash_controller.dart';
-
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
 
