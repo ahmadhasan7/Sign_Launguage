@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:signlanguage/core/constant/staticdata.dart';
 
+import '../core/constant/routing.dart';
+
 abstract class OnBordingController extends GetxController {
   next();
   onpagechange(int m);
@@ -16,7 +18,7 @@ class OnBordingControllerImp extends OnBordingController{
       pageController.animateToPage(currentindex, duration:Duration(seconds: 1), curve: Curves.easeOutBack);
     }
     else {
-      //Get.toNamed(AppRoute.signup);
+      Get.toNamed(AppRoute.mainloginpage);
     }
     update();
   }
