@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           getPages: Routers().routers,
           initialBinding: InitialBinding(),
-          locale:const Locale('ar'),
+         // locale:const Locale('ar'),
           theme: ThemeData(
             scaffoldBackgroundColor: AppColors.darkbluecolor
 

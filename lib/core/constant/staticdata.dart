@@ -3,6 +3,7 @@ import 'package:signlanguage/core/constant/image.dart';
 import '../../data/model/onbordring_model.dart';
 
 class StaticData {
+  final String baseurl='https://4213-185-177-125-94.ngrok-free.app';
   List<OnBordringModel> onBordingData = [
     OnBordringModel(
         title: "How to Say “Water” in Baby Sign Language",

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:signlanguage/core/classes/stutusconntection.dart';
 
+import '../constant/colors.dart';
+
 class HandlingDataView extends StatelessWidget {
   final StatusRequest statusRequest;
   final Widget widget;
@@ -12,10 +14,10 @@ class HandlingDataView extends StatelessWidget {
   Widget build(BuildContext context) {
     return statusRequest == StatusRequest.loading
         ? const Center(
-        child:  CircularProgressIndicator(color: Colors.green,))
+        child:  CircularProgressIndicator(color:AppColors.primarycolor,))
         : statusRequest == StatusRequest.offlinefailure
         ? const Center(
-        child:CircularProgressIndicator() ,
+        child:CircularProgressIndicator(color: AppColors.primarycolor,) ,
             )
         : statusRequest == StatusRequest.serverfailure
         ?const  Center(

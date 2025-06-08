@@ -5,4 +5,5 @@ class AppRoute {
   /////auth
   static const String mainloginpage = '/mainloginpage';
   static const String loginpage='/loginpage';
+  static const String signup='/signup';
 }
